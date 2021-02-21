@@ -1,0 +1,349 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F0FFF0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto 0 auto;
+    background-color: #0EBFE9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.formSection {
+    padding: 20px;
+}
+
+.formField {
+    padding: 10px 0 10px 0;
+}
+
+.formField input {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.submitBtn {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: #00CD00;
+    font-size: 17px;
+    border-radius: 4px;
+    color: black;
+}
+
+.settingsContainer {
+    padding-top: 80px;
+    background-color: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsContainer h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="url"],
+.settingsContainer form select {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.settingsContainer form textarea {
+    width: 300px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.settingsContainer form textarea::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+}
+
+.settingsContainer form textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+.settingsContainer form textarea::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 8px;
+}
+
+.settingsContainer form textarea::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+.settingsContainer form input[type="submit"] {
+    background-color: #dc1928;
+    width: 90%;
+    border-radius: 4px;
+    border: none;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.formData label, input {
+    padding: 10px;
+}
+
+.formData label {
+    font-size: 20px;
+}
+
+.formData input[type="file"] {
+    width: 270px;
+    content: 'select';
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    cursor: pointer;
+    color: black;
+    white-space: nowrap;
+}
+
+.formData input[type="submit"] {
+    width: 100% !important;
+    margin-top: 20px;
+    height: 50px !important;
+    border-radius: 2px;
+    border: none;
+}
+
+.alertSuccess, .alertError {
+    margin: 10px 0;
+}
+
+.alertError {
+    width: 300px;
+    color: #dc1928;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.alertSuccess {
+    color: #2ecc71;
+    margin: 10px 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.addInputsBtn {
+    height: 40px;
+    width: 50%;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background: lightgreen;
+}
+
+.dynamicFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.removeFieldsBtn {
+    width: 30%;
+    height: 40px;
+    background: red;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.errorText {
+    padding: 0;
+    margin: 0;
+}
+
+.topBar {
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 0 60px;
+    align-items: center;
+    height: 90px;
+    box-sizing: border-box;
+    transition: background-color 200ms linear;
+}
+
+.topBar.scrolled {
+    background-color: #141414;
+    transition: background-color 200ms linear;
+}
+
+.logoContainer {
+    height: 50px;
+}
+
+.logoContainer img {
+    height: 100%;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a {
+    color: #07c1ff;
+    font-size: 17px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.rightItems {
+    text-align: right;
+    flex: 1;
+}
+
+.rightItems i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.mobile {
+    text-align: right;
+    line-height: 70px;
+    height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu a {
+    font-weight: 700;
+    clear: right;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    line-height: 50px;
+}
+
+.mobile label {
+    margin: 0 40px;
+    font-size: 26px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 70%;
+        font-size: 20px;
+    }
+}
+
+/* navbar collapse for mobile devices */
+@media only screen and (max-width:750px) {
+
+    .navLinks {
+        display: none;
+    }
+
+    .mobile label {
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+        color: #fff;
+    }
+
+    .mobile {
+        position: absolute;
+        right: 2%;
+        width: 100%;
+        left: 0.5%;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #000;
+        margin: 0;
+    }
+
+    #toggle:checked ~ .menu {
+        display: block;
+    }
+
+    .topBar .rightItems {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    
+    .navLinks a {
+        font-size: 30px;
+    }
+
+    .rightItems i {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+}

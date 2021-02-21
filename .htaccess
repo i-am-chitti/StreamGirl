@@ -1,0 +1,11 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteRule ^$ index.php [NC,L]
+RewriteRule ^index$ index.php [NC,L]
+RewriteRule ^error$ errorPage.php [NC,L]
+# RewriteRule ^view/([0-9]+)$ view.php?view=$1 [NC,L]
+# RewriteRule ^view/([0-9]+)/page/([0-9]+)$ view.php?view=$1&page=$2 [NC,L]
+# RewriteRule ^view/([0-9]+)/page/([0-9]+)$ view.php?view=$1&page=$2 [NC,L]
+# RewriteRule ^view/([0-9]+)/id/([0-9]+)/page/([0-9]+)$ view.php?view=$1&id=$2&page=$3 [NC,L]
